@@ -1,14 +1,8 @@
-/* debug purposes */
-* {
-    border: 1px solid gray;
-    box-sizing: border-box;
-}
 
-/* shared css */
 body {
+    box-sizing: border-box;
     font-family: 'Roboto', 'Arial', sans-serif;
 }
-
 .headerbar, .maincontent,
 .footerbar {
     display: flex;
@@ -19,7 +13,6 @@ body {
     background-color: #1F2937;
     color: #F9FAF8;
 }
-
 .photocontent,
 .quotecontent {
     display: flex;
@@ -27,15 +20,6 @@ body {
     margin-right: 50px;
     padding-left: 150px;
     padding-right: 150px;
-}
-
-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border: none;
-    border-radius: 3px;
-    padding: 4px 45px;
-    margin-left: 10px;
 }
 
 /* header content below */
@@ -65,6 +49,10 @@ a {
     margin: 0;
     display: flex;
     flex-shrink: 0;
+    gap: 5px;
+}
+a:hover {
+    color: #3882F6;
 }
 
 /* main content below */
@@ -96,6 +84,11 @@ a {
 }
 .topbutton {
     margin-left: 0px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 35px;
 }
 .contentB {
     display:flex;
@@ -149,7 +142,7 @@ a {
 .text {
     text-align: center;
     font-size: 18px;
-    color: #E5E7EB;
+    color: #6b7280;;
 }
 
 /* quote content below */
@@ -160,13 +153,11 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
 .quote {
     font-style: italic;
     font-size: 36px;
     color: #1F2937;
 }
-
 .thor {
     color: #1F2937;
     font-weight: 900;
@@ -176,3 +167,68 @@ a {
 }
 
 /* act content below */
+.actcontent {
+    display: flex;
+    margin: 60px 200px;
+    padding: 30px 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    color: #fff;
+    border-radius: 4px;
+}   
+
+.container3a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    width: 400px;
+}
+
+.acth {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.actsub {
+    margin-top: 0;
+    margin-bottom: 0; 
+} 
+
+.container3b {
+    display: flex;
+
+}
+
+.botbutton {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    padding: 4px 29px;
+    /* margin-left: auto; */
+    /* background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    padding: 4px 40px;
+    margin-left: 10px;
+    display: flex; */
+}
+
+/* footer */
+.footerbar {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+button:hover {
+    background-color: #6b7280;
+}
+
+button:active {
+    background-color: red;
+}
