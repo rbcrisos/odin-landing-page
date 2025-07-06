@@ -9,23 +9,24 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.headerbar,
-.maincontent, 
-.photocontent, 
-.quotecontent,
-.actcontent,
+.headerbar, .maincontent,
 .footerbar {
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
     padding-left: 100px;
     padding-right: 100px;
-}
-
-.headerbar, .maincontent,
-.footerbar {
     background-color: #1F2937;
     color: #F9FAF8;
+}
+
+.photocontent,
+.quotecontent {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 button {
@@ -70,7 +71,6 @@ a {
 .maincontent {
     background-color: #1F2937;
     color: #E5E7EB;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
@@ -113,8 +113,8 @@ a {
 
 /* photo content below */
 .photocontent {
-    display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 .content-h2 {
     font-size: 36px;
@@ -128,18 +128,17 @@ a {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    margin-bottom: 100px;
 }
 .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 180px;
+    width: 160px;
 }
 .photo2 {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     border-radius: 5px;
     border: 2px solid #3882F6;
@@ -153,5 +152,27 @@ a {
     color: #E5E7EB;
 }
 
+/* quote content below */
+.quotecontent {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
 
+.thor {
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 18px;
+    flex:1;
+    align-self: flex-end;
+}
+
+/* act content below */
