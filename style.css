@@ -5,60 +5,77 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.header-container,
-.footer {
+.headerbar,
+.maincontent, 
+.photocontent, 
+.quotecontent,
+.actcontent,
+.footerbar {
     display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.headerbar, .maincontent,
+.footerbar {
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
-.header-container {
-    justify-content: flex-end;
+.headerbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.header {
-    font-size: 24px;
+.headerlogo {
     color: #F9FAF8;
+    font-size: 24px;
     font-weight: 900;
-    flex: 1;
-    margin-right: auto;
-    gap: 16px;
-    margin-left: 100px;
-}
-
-ul {
-    display: flex;
-    font-size: 18px;
-    color: #E5E7EB;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-right: 100px;
-    justify-content: flex-end;
-    /* align-items: center; */
-    flex: 1 0 0%;
 }
 
 li {
-    margin: 8px;
+    margin-left: 4px;
 }
 
-.container1 {
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.headerlinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    /* flex-flow: row wrap; */
-    justify-content: space-between;
-    align-items: center;
-    min-height: 300px;
-    padding: 10px;
-    /* margin: 0; */
+    flex-shrink: 0;
+}
+
+
+/* Header Above */
+
+
+
+
+.maincontent {
     background-color: #1F2937;
     color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* min-height: 300px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 0; */
+
     flex-direction: row;
 }
 
@@ -131,13 +148,3 @@ img {
 }
 
 
-/* .header-container,
-.container1, 
-.container2, 
-.container3,
-.actioncall,
-.footer {
-    display:flex;
-    margin-left: 100px;
-    margin-right: 100px;
-} */
